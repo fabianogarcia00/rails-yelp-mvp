@@ -1,0 +1,12 @@
+<div>
+  <p style="color: green"><%= notice %></p>
+  <h1>Restaurants</h1>
+</div>
+
+<div class="container my-3">
+  <%= render "restaurants/list", restaurants: @restaurants %>
+</div>
+
+<div>
+  <%= link_to "New restaurant", new_restaurant_path, class: "btn btn-primary" %>
+</div>
